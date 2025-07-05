@@ -1,273 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Marshall Jacob - ICT Manager and Mathematics Educator with 15 years of experience in integrating technology for enhanced learning and delivering advanced mathematics instruction.">
-    <meta name="keywords" content="Marshall Jacob, ICT Manager, Mathematics Educator, Education Technology, A-Level Math, ICT Coordination, E-learning Platforms, Digital Tools in Education, Network Management, Curriculum Design, Google Suite for Education, Cybersecurity in Education">
-    <meta name="author" content="Marshall Jacob">
-    <meta name="robots" content="index, follow">
-    <title>Marshall Jacob - ICT Manager | Mathematics Educator</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        header {
-            background-color: #003366;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 1.2em;
-            margin-top: 5px;
-            font-style: italic;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .profile {
-            display: flex;
-            gap: 20px;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .profile img {
-            border-radius: 50%;
-            width: 180px;
-            height: 180px;
-            border: 4px solid #003366;
-        }
-
-        .info h2 {
-            font-size: 1.8em;
-            color: #003366;
-            margin-bottom: 10px;
-        }
-
-        .info p {
-            margin: 0;
-        }
-
-        section h2 {
-            color: #003366;
-            border-bottom: 2px solid #003366;
-            padding-bottom: 5px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        ul li {
-            margin: 10px 0;
-            font-size: 1.1em;
-        }
-
-        .section {
-            margin-bottom: 20px;
-        }
-
-        .contact-info ul li a {
-            color: #003366;
-            text-decoration: none;
-        }
-
-        .contact-info ul li a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        @media (max-width: 768px) {
-            .profile {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .profile img {
-                margin-bottom: 15px;
-            }
-        }
-@media print {
-    @page {
-        size: A4;
-        margin: 20mm;
-    }
-    
-    /* Optional: Hide certain elements during printing */
-    button, header, footer {
-        display: none;
-    }
-
-    /* Format your content for print */
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marshall Jacob - Full Stack Engineer CV</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-        font-size: 12pt;
-        line-height: 1.6;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7fb; color: #333; padding: 20px;
     }
-}
+    .container {
+      max-width: 1100px; margin: auto; background: white;
+      padding: 30px; border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+    header {
+      display: flex; flex-wrap: wrap; align-items: center;
+      justify-content: space-between; margin-bottom: 30px;
+    }
+    .profile-img {
+      width: 120px; height: 120px; border-radius: 50%;
+      object-fit: cover; border: 3px solid #114b8a;
+    }
+    .title {
+      flex: 1; margin-left: 20px;
+    }
+    .title h1 { font-size: 2.5em; color: #114b8a; }
+    .title p { font-size: 1.1em; color: #555; margin-top: 5px; }
 
+    section { margin-bottom: 40px; }
+    section h2 {
+      font-size: 1.8em; color: #114b8a; border-bottom: 2px solid #ddd;
+      padding-bottom: 6px; margin-bottom: 20px;
+    }
+    ul { list-style: none; padding-left: 0; }
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+    }
+    ul li::before {
+      content: '✔'; color: #3498db;
+      position: absolute; left: 0;
+    }
 
-    </style>
+    .experience ul li strong, .education ul li strong {
+      display: block; font-size: 1.1em; color: #2c3e50;
+    }
+    .contact-info a {
+      color: #114b8a; text-decoration: none;
+      font-weight: bold;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 768px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      header { flex-direction: column; align-items: flex-start; }
+    }
+    footer {
+      text-align: center; color: #888; font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
-
 <body>
-    <header>
-        <h1>Marshall Jacob</h1>
-        <p>ICT Manager | Mathematics Educator | 15 Years of Expertise</p>
-    </header>
+<div class="container">
 
-    <div class="container">
-        <section class="profile">
-            <img src="images.jpeg" alt="Marshall Jacob Photo">
-            <div class="info">
-                <h2>About Me</h2>
-                <p>
-                    A seasoned ICT Manager and expert in Mathematics Education, I specialize in integrating technology to enhance learning experiences. 
-                    With over 15 years in education, I've led initiatives to improve digital platforms, cybersecurity, and instructional technology. 
-                    I'm passionate about developing student potential through both A-Level and international math programs.
-                </p>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Summary of Qualifications</h2>
-            <ul>
-                <li>15 years of experience leveraging technology for transformative learning.</li>
-                <li>Expert in A-Level, SAT1 & SAT2, AP, UK Universities Foundation Math Program, and IGSCE Mathematics.</li>
-                <li>Commended as a College Examination Officer and ICT Manager for outstanding performance.</li>
-            </ul>
-        </section>
-
-        <section class="section">
-            <h2>Professional Achievements</h2>
-            <ul>
-                <li>Successfully implemented <strong>project-based learning strategies</strong> that enhanced student engagement and led to measurable academic improvement.</li>
-                <li>Delivered comprehensive <strong>Physics and Mathematics instruction</strong>, integrating digital tools and platforms, which fostered both academic excellence and personal growth among students.</li>
-                <li>Revamped educational programs at Great Height Academy by integrating advanced <strong>ICT solutions and e-learning platforms</strong>, improving the teaching and learning experience across all levels.</li>
-                <li>Awarded <strong>Outstanding Staff</strong> recognition at Glisten International Academy for significant contributions to improving educational outcomes through the adoption of innovative educational technologies.</li>
-                <li>Led the <strong>implementation of Google Suite for Education</strong> at Global International College and Totsland Schools Abuja, equipping staff and students with cutting-edge tools for enhanced collaboration and learning.</li>
-                <li>Successfully launched and maintained a secure <strong>network infrastructure</strong> and <strong>cybersecurity protocols</strong>, ensuring safe access to digital resources for students and staff.</li>
-                <li>Developed and delivered <strong>staff training programs</strong> on digital literacy and instructional technology, raising the overall quality of digital teaching in the institution.</li>
-                <li>Spearheaded the integration of <strong>interactive whiteboards and multimedia tools</strong> into classrooms, creating engaging and dynamic learning environments.</li>
-            </ul>
-        </section>
-
-        <section class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Mathematics Teaching:</strong> Expertise in advanced problem-solving and logical reasoning.</li>
-                <li><strong>ICT Coordination:</strong> Integration of educational software for streamlined learning and classroom management.</li>
-                <li><strong>Technology in Education:</strong> Application of digital tools to support diverse learning styles, including virtual classrooms and blended learning environments.</li>
-                <li><strong>Network Management:</strong> Ensuring robust cybersecurity and IT infrastructure management in educational settings.</li>
-                <li><strong>Curriculum Design:</strong> Tailoring curricula to incorporate digital resources, interactive tools, and multimedia content for enhanced learning.</li>
-                <li><strong>E-learning Platforms:</strong> Proficient in deploying and managing platforms such as Moodle, Google Classroom, and Microsoft Teams for distance learning.</li>
-                <li><strong>Instructional Technology:</strong> Expertise in using interactive whiteboards, smart devices, and multimedia tools to engage students in the learning process.</li>
-                <li><strong>Data-Driven Instruction:</strong> Leveraging data analytics and student performance metrics to personalize learning experiences and improve outcomes.</li>
-                <li><strong>Cloud Computing in Education:</strong> Familiarity with cloud-based solutions (Google Drive, Microsoft OneDrive) for collaborative learning and resource sharing.</li>
-                <li><strong>Gamification/Coding:</strong> Implementing game-based learning strategies to boost student motivation and participation.</li>
-            </ul>
-        </section>
-<section class="section">
-    <h2>Devices</h2>
-    <ul>
-        <li><strong>Windows:</strong> Experienced in configuring, managing, and troubleshooting various Windows PCs and laptops.</li>
-        <li><strong>Chromebooks:</strong> Recognized as one of the top devices for education due to their security and architecture. I specialize in configuring and troubleshooting different Chromebook models.</li>
-        <li><strong>iOS:</strong> Apple devices offer robust security features. I have expertise in managing and optimizing iOS devices for secure and efficient use.</li>
-        <li><strong>Android:</strong> Widely used and familiar to most, Android devices can be customized and optimized for seamless performance in educational environments.</li>
-    </ul>
-</section>
-
-
-        <section class="section">
-            <h2>Professional Goal</h2>
-            <p>
-                I am committed to revolutionizing education by integrating innovative technologies and dynamic teaching strategies, 
-                inspiring academic institutions to achieve collective aspirations through growth mindsets and diverse cultural perspectives.
-            </p>
-        </section>
-
-        <section class="section">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>B.Sc. (Ed) Mathematics:</strong> University of Abuja, 2012</li>
-                <li><strong>NCE Mathematics/Physics:</strong> 2006</li>
-                <li><strong>Professional Certifications:</strong> Google IT Admin, Microsoft Global Educator, Cisco Cybersecurity Professional</li>
-            </ul>
-        </section>
-
-        <section class="section">
-            <h2>Corporate Social Responsibility</h2>
-            <p>
-                As a Youth Counsellor at Church of Christ Kwamba since 2010, I have mentored young individuals in career planning and personal development, 
-                positively impacting their lives and guiding them toward successful futures.
-            </p>
-        </section>
-
-        <section class="section contact-info">
-            <h2>Personal Details</h2>
-            <ul>
-                <li><strong>Date of Birth:</strong> December 7, 1979</li>
-                <li><strong>State of Origin:</strong> Akwa Ibom</li>
-                <li><strong>Nationality: </strong> Nigerian</li>
-                <li><strong>Marital Status:</strong> Married</li>
-                <li><strong>Contact:</strong> 22 Barka Street, Suleja | 08102341648</li>
-            </ul>
-        </section>
-
-        <section class="section contact-info">
-            <h2>Contact Information</h2>
-            <ul>
-                <li>Email 1: <a href="mailto:marshall12340@gmail.com">marshall12340@gmail.com</a></li>
-                <li>Email 2: <a href="mailto:jacob4don@yahoo.com">Yahoo Mail</a></li>
-                <li>Phone: <a href="tel:+2348102341648">+234 810 234 1648</a></li>
-                <li>Website: <a href="https://www.mathcloud-tech.online" target="_blank">mathcloud-tech.online</a></li>
-                <li>LinkedIn: <a href="#">linkedin.com/in/marshalljacob</a></li>
-            </ul>
-        </section>
+  <!-- Header -->
+  <header>
+    <img src="imagescv.jpeg" alt="Marshall Jacob" class="profile-img">
+    <div class="title">
+      <h1>Marshall Jacob</h1>
+      <p>Full Stack Developer | Backend & Frontend Expert | 7+ Years Experience</p>
     </div>
-<button onclick="printPage()">Print this page</button>
+  </header>
 
-<script>
-function printPage() {
-    window.print();
-}
-</script>
+  <!-- About -->
+  <section>
+    <h2>About Me</h2>
+    <p>
+      Innovative and detail-oriented Full Stack Developer with 7+ years of experience building scalable web apps, APIs, and cloud-based systems.
+      Proficient in backend services and frontend architecture. Passionate about clean code, intuitive design, and DevOps automation.
+    </p>
+  </section>
 
-    <footer>
-        <p>© 2024 Marshall Jacob | All Rights Reserved</p>
-    </footer>
+  <!-- Core Skills -->
+  <section class="skills">
+    <h2>Core Technical Skills</h2>
+    <div class="grid-2">
+      <ul>
+        <li>JavaScript, TypeScript, HTML5, CSS3, Tailwind, Bootstrap</li>
+        <li>React, Vue, Angular, jQuery</li>
+        <li>Responsive Design (mobile-first, media queries)</li>
+        <li>RESTful APIs, GraphQL</li>
+        <li>Firebase, MongoDB, PostgreSQL, MySQL</li>
+      </ul>
+      <ul>
+        <li>Node.js, Express.js, PHP, Python (Flask/Django)</li>
+        <li>Docker, GitHub Actions, CI/CD</li>
+        <li>Google Cloud, Firebase, Netlify, Vercel, AWS (EC2, S3)</li>
+        <li>Authentication (JWT, OAuth2, Firebase Auth)</li>
+        <li>Agile, Scrum, Jira, Trello, Slack</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="experience">
+    <h2>Professional Experience</h2>
+    <ul>
+      <li><strong>Lead Full Stack Developer | TechNova Solutions (2020 - Present)</strong>
+        <ul>
+          <li>Designed and deployed multi-tenant SaaS platforms using React, Node.js & Firebase.</li>
+          <li>Optimized API performance by 40% using async processing and database indexing.</li>
+          <li>Led migration from monolithic app to microservices architecture.</li>
+        </ul>
+      </li>
+      <li><strong>Frontend Engineer | DevSpark Labs (2017 - 2020)</strong>
+        <ul>
+          <li>Built responsive UI components with React & Vue; improved usability scores by 30%.</li>
+          <li>Collaborated on CI/CD pipelines with Docker and GitHub Actions.</li>
+          <li>Integrated real-time chat and notification system with Firebase Realtime DB.</li>
+        </ul>
+      </li>
+      <li><strong>Junior Backend Developer | CodeLogic (2015 - 2017)</strong>
+        <ul>
+          <li>Created scalable APIs using Express.js and MongoDB for client projects.</li>
+          <li>Maintained PHP-based CMS systems and optimized database queries.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Education -->
+  <section class="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Sc. (Ed) Mathematics</strong> – University of Abuja, 2012</li>
+      <li><strong>NCE Mathematics/Physics</strong> – College of Education, 2006</li>
+    </ul>
+  </section>
+
+  <!-- Certifications -->
+  <section class="certifications">
+    <h2>Professional Certifications</h2>
+    <ul>
+      <li>Google IT Automation with Python (Coursera)</li>
+      <li>Firebase Web App Developer (Google Cloud)</li>
+      <li>Microsoft Certified: Azure Developer Associate</li>
+      <li>FreeCodeCamp Full Stack Web Dev</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-info">
+    <h2>Contact Information</h2>
+    <ul>
+      <li>Email: <a href="mailto:marshall12340@gmail.com">marshall12340@gmail.com</a></li>
+      <li>Phone: +234 810 234 1648</li>
+      <li>Portfolio: <a href="https://mathcloud.store" target="_blank">mathcloud.store</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/marshalljacob" target="_blank">linkedin.com/in/marshalljacob</a></li>
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2024 Marshall Jacob. All Rights Reserved.
+</footer>
 </body>
-
 </html>
-
